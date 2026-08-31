@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-assistant), "Assistant", sans-serif;
+
+  --color-bg: oklch(0.975 0.004 240);
+  --color-surface: oklch(0.99 0.003 240);
+  --color-surface-hover: oklch(1 0 0);
+  --color-surface-alt: oklch(0.965 0.005 250);
+  --color-surface-alt-2: oklch(0.945 0.008 250);
+
+  --color-ink: oklch(0.24 0.012 250);
+  --color-ink-2: oklch(0.46 0.012 250);
+  --color-ink-3: oklch(0.55 0.012 250);
+
+  --color-border: oklch(0.91 0.008 250);
+  --color-border-soft: oklch(0.93 0.008 250);
+
+  --color-accent: oklch(0.62 0.15 145);
+  --color-accent-hover: oklch(0.7 0.15 145);
+  --color-on-accent: oklch(0.16 0.03 145);
+  --color-accent-ink: oklch(0.42 0.13 145);
+  --color-accent-ink-2: oklch(0.38 0.12 145);
+  --color-accent-soft: oklch(0.955 0.03 145);
+
+  --color-dark: oklch(0.24 0.012 250);
+  --color-on-dark: oklch(0.97 0.004 240);
+  --color-on-dark-2: oklch(0.78 0.008 250);
+  --color-dark-border: oklch(0.4 0.012 250);
+  --color-dark-field: oklch(0.29 0.012 250);
+
+  --color-warn-bg: oklch(0.94 0.05 40);
+  --color-warn-ink: oklch(0.44 0.14 40);
+  --color-error-bg: oklch(0.94 0.05 30);
+  --color-error-ink: oklch(0.44 0.14 30);
+  --color-slow-bg: oklch(0.95 0.05 85);
+  --color-slow-ink: oklch(0.42 0.11 70);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: oklch(0.5 0.13 145);
+  text-decoration: none;
+}
+
+a:hover {
+  color: oklch(0.42 0.13 145);
+}
+
+input,
+select,
+button,
+textarea {
+  font-family: inherit;
+}
+
+::placeholder {
+  color: oklch(0.65 0.01 240);
+}
+
+@keyframes livePulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
